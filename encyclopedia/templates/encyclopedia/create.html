@@ -1,0 +1,13 @@
+<form action="{% url 'create' %}" method="post">
+	{% csrf_token %}
+	<div>
+		<label for="input_title">Title</label>
+		<input id="input_title" name="title" type="text">
+	</div>
+	<br>
+	<div>
+		<label for="desc">Description (Markdown)</label>
+		<textarea id="desc" name="description"></textarea>
+		<input type="submit">
+	</div>
+</form>
